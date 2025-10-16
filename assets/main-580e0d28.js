@@ -1,0 +1,2 @@
+console.log("Script started successfully");let o;WA.onInit().then(()=>{console.log("Scripting API ready"),console.log("Player tags: ",WA.player.tags),WA.room.area.onEnter("clock").subscribe(()=>{const e=new Date,c=e.getHours()+":"+e.getMinutes();o=WA.ui.openPopup("clockPopup","It's "+c,[])}),WA.room.area.onLeave("clock").subscribe(t)}).catch(console.error);function t(){o!==void 0&&(o.close(),o=void 0)}
+//# sourceMappingURL=main-580e0d28.js.map
