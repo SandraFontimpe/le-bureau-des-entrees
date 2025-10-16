@@ -18,7 +18,7 @@ if (process.env.TILESET_OPTIMIZATION && process.env.TILESET_OPTIMIZATION === "tr
                 quality: [qualityMin, qualityMax],
             }
         }
-    }
+    };
 }
 
 export default defineConfig({
@@ -28,15 +28,9 @@ export default defineConfig({
         rollupOptions: {
             input: {
                 index: "./index.html",
+                main: "./src/main.ts", // ✅ Point d’entrée principal
                 ...getMapsScripts(maps),
             },
-            output: {
-                // Force le nom du main bundle à "main.js"
-                entryFileNames: (chunk) => {
-                    if (chunk.name === 'main') return 'main.js';
-                    return '[name].js';
-                }
-            }
         },
     },
     plugins: [...getMapsOptimizers(maps, optimizerOptions)],
