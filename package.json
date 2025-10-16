@@ -3,7 +3,7 @@
   "version": "3.3.18",
   "license": "MIT",
   "type": "module",
-  "main": "src/main.ts",
+  "main": "src/main-entry.js",
   "scripts": {
     "dev": "vite",
     "start": "vite",
