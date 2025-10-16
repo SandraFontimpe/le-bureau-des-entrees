@@ -30,6 +30,9 @@ jobs:
 
       - name: Build project
         run: npm run build
+        
+        - name: Copy main script for map optimizer
+          run: cp dist/assets/main-*.js dist/main.js
 
       - name: Extract UPLOAD_MODE from .env
         run: |
