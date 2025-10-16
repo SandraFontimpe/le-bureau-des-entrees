@@ -9,8 +9,8 @@ let optimizerOptions: OptimizeOptions = {
 };
 
 if (process.env.TILESET_OPTIMIZATION && process.env.TILESET_OPTIMIZATION === "true") {
-    const qualityMin = process.env.TILESET_OPTIMIZATION_QUALITY_MIN ? parseInt(process.env.TILESET_OPTIMIZATION_QUALITY_MIN) : 0.9;
-    const qualityMax = process.env.TILESET_OPTIMIZATION_QUALITY_MAX ? parseInt(process.env.TILESET_OPTIMIZATION_QUALITY_MAX) : 1;
+    const qualityMin = process.env.TILESET_OPTIMIZATION_QUALITY_MIN ? parseFloat(process.env.TILESET_OPTIMIZATION_QUALITY_MIN) : 0.9;
+    const qualityMax = process.env.TILESET_OPTIMIZATION_QUALITY_MAX ? parseFloat(process.env.TILESET_OPTIMIZATION_QUALITY_MAX) : 1;
 
     optimizerOptions.output = {
         tileset: {
@@ -30,6 +30,13 @@ export default defineConfig({
                 index: "./index.html",
                 ...getMapsScripts(maps),
             },
+            output: {
+                // Force le nom du main bundle à "main.js"
+                entryFileNames: (chunk) => {
+                    if (chunk.name === 'main') return 'main.js';
+                    return '[name].js';
+                }
+            }
         },
     },
     plugins: [...getMapsOptimizers(maps, optimizerOptions)],
