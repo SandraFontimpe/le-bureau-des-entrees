@@ -216,7 +216,7 @@
                         {
                          "name":"openWebsite",
                          "type":"string",
-                         "value":"https:\/\/view.genially.com\/68ecc97bee27e3b7c1d7a7b9"
+                         "value":"https:\/\/view.genially.com\/68efb0a9b9cb631353a23677"
                         }, 
                         {
                          "name":"openWebsiteTrigger",
@@ -1280,7 +1280,7 @@
                         {
                          "name":"openWebsiteTriggerMessage",
                          "type":"string",
-                         "value":"???"
+                         "value":"Ce secr\u00e9taire m\u00e9dical semble exasp\u00e9r\u00e9 par la situation. Cliquez sur le bouton afin de d\u00e9buter une discussion."
                         }],
                  "type":"tilelayer",
                  "visible":true,
@@ -1367,7 +1367,7 @@
                         {
                          "name":"openWebsiteTriggerMessage",
                          "type":"string",
-                         "value":"???"
+                         "value":"Un poste informatique est rest\u00e9 d\u00e9verrouill\u00e9. Cliquez pour voir ce qui s\u2019affiche \u00e0 l\u2019\u00e9cran."
                         }],
                  "type":"tilelayer",
                  "visible":true,
@@ -1454,7 +1454,7 @@
                         {
                          "name":"openWebsiteTriggerMessage",
                          "type":"string",
-                         "value":"???"
+                         "value":"Une tablette est rest\u00e9e d\u00e9verrouill\u00e9e. Cliquez pour voir ce qui s\u2019affiche \u00e0 l\u2019\u00e9cran."
                         }],
                  "type":"tilelayer",
                  "visible":true,
