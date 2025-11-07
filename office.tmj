@@ -226,7 +226,7 @@
                         {
                          "name":"openWebsiteTriggerMessage",
                          "type":"string",
-                         "value":"L\u2019agente d\u2019accueil vous lance un regard agac\u00e9. Mieux vaut choisir vos mots\u2026 Cliquez sur le bouton afin de d\u00e9buter une discussion.\n"
+                         "value":"L\u2019infirmi\u00e8re semble paniqu\u00e9e et perdue face \u00e0 son PC. Cliquez sur le bouton afin de d\u00e9buter une discussion.\n"
                         }],
                  "type":"tilelayer",
                  "visible":true,
